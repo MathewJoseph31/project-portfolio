@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Nav from "./components/Nav";
 import About from "./components/About";
 import ContactForm from "./components/ContactForm";
+import Bottom from "./components/Bottom";
 
 function App() {
   const [categories] = useState([
@@ -30,11 +31,13 @@ function App() {
           currentCategory={currentCategory}
         />
       </header>
-      <section>
+      <section style={{ height: "60vh" }}>
         {currentCategory.name === "about Me" && <About />}
         {currentCategory.name === "contact" && <ContactForm />}
       </section>
-      <footer></footer>
+      <footer>
+        <Bottom />
+      </footer>
     </div>
   );
 }

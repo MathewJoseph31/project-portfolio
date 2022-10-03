@@ -1,0 +1,13 @@
+.about{
+    display: flex;
+    justify-content:space-around;
+}
+
+.about__image{
+    width: 17%;
+    object-fit: contain;
+}
+
+.about__description{
+    width: 50%;
+}

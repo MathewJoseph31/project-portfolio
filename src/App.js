@@ -5,6 +5,7 @@ import ContactForm from "./components/ContactForm";
 import Bottom from "./components/Bottom";
 import BioData from "./components/BioData";
 import Publication from "./components/Publication";
+import Project from "./components/Project";
 
 import "./css/App.css";
 
@@ -15,7 +16,7 @@ function App() {
       description:
         "I am senior software engineer based in Syracuse, NY, USA. I love problem solving using programming languages. technologies such as HTML, CSS, Javascript, React JS",
     },
-    { name: "portfolio", description: "Portfolio description" },
+    { name: "projects", description: "Projects description" },
     { name: "publication", description: "Publications" },
     { name: "contact", description: "Contact description" },
     {
@@ -38,6 +39,7 @@ function App() {
       </header>
       <section style={{ height: "60vh" }}>
         {currentCategory.name === "about Me" && <About />}
+        {currentCategory.name === "projects" && <Project />}
         {currentCategory.name === "contact" && <ContactForm />}
         {currentCategory.name === "publication" && <Publication />}
         {currentCategory.name === "resume" && <BioData />}

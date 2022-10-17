@@ -42,7 +42,7 @@ function ContactForm() {
   }
 
   return (
-    <section>
+    <section className="ContactForm">
       <h1>Contact me</h1>
       <form id="contact-form" onSubmit={handleSubmit}>
         <div>
@@ -55,7 +55,7 @@ function ContactForm() {
           />
         </div>
         <div>
-          <label htmlFor="email">Email address:</label>
+          <label htmlFor="email">Email Address:</label>
           <input
             type="email"
             defaultValue={email}
@@ -77,6 +77,7 @@ function ContactForm() {
             <p className="error-text">{errorMessage}</p>
           </div>
         )}
+        <br />
         <button type="submit">Submit</button>
       </form>
     </section>

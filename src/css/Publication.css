@@ -1,0 +1,6 @@
+.Publication{
+    margin-left: 40px;   
+    height: 60vh;
+    overflow-y: scroll;
+    font-family: 'Times New Roman', Times, serif;
+}

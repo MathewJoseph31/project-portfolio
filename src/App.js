@@ -3,6 +3,10 @@ import Nav from "./components/Nav";
 import About from "./components/About";
 import ContactForm from "./components/ContactForm";
 import Bottom from "./components/Bottom";
+import BioData from "./components/BioData";
+import Publication from "./components/Publication";
+
+import "./css/App.css";
 
 function App() {
   const [categories] = useState([
@@ -12,6 +16,7 @@ function App() {
         "I am senior software engineer based in Syracuse, NY, USA. I love problem solving using programming languages. technologies such as HTML, CSS, Javascript, React JS",
     },
     { name: "portfolio", description: "Portfolio description" },
+    { name: "publication", description: "Publications" },
     { name: "contact", description: "Contact description" },
     {
       name: "resume",
@@ -22,9 +27,9 @@ function App() {
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
 
   return (
-    <div>
-      <header>
-        <h1>Mathew Joseph</h1>
+    <div className="App">
+      <header className="AppHeader">
+        <h1>Dr. Mathew Joseph, PhD</h1>
         <Nav
           categories={categories}
           setCurrentCategory={setCurrentCategory}
@@ -34,6 +39,8 @@ function App() {
       <section style={{ height: "60vh" }}>
         {currentCategory.name === "about Me" && <About />}
         {currentCategory.name === "contact" && <ContactForm />}
+        {currentCategory.name === "publication" && <Publication />}
+        {currentCategory.name === "resume" && <BioData />}
       </section>
       <footer>
         <Bottom />

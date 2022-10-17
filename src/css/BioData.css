@@ -1,0 +1,8 @@
+.BioData{
+    text-align: center;
+}
+
+.BioData > iframe{
+    width: 950px;
+    height: 650px;
+}

@@ -10,4 +10,7 @@
 
 .about__description{
     width: 50%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    font-weight: normal;
 }

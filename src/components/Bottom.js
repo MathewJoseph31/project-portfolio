@@ -7,6 +7,7 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import "../css/Bottom.css";
 
 function Bottom() {
+  const protocol = "http";
   return (
     <div className="footer">
       <div className="footer__grid">
@@ -25,7 +26,7 @@ function Bottom() {
                 id="links"
                 onClick={() =>
                   window.location.assign(
-                    "https" +
+                    protocol +
                       "://" +
                       window.location.hostname +
                       ":" +
@@ -40,7 +41,7 @@ function Bottom() {
                 id="links"
                 onClick={() =>
                   window.location.assign(
-                    "https" +
+                    protocol +
                       "://" +
                       window.location.hostname +
                       ":" +
@@ -55,7 +56,7 @@ function Bottom() {
                 id="links"
                 onClick={() =>
                   window.location.assign(
-                    "https" +
+                    protocol +
                       "://" +
                       window.location.hostname +
                       ":" +

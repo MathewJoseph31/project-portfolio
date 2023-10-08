@@ -6,8 +6,10 @@
   width: 99.5%;
   background-color: #05241d;
   padding: 20px;
-  height: 280px;
+  height: fit-content;
+  min-height: 30vh;
 }
+
 @media only screen and (min-width: 600px) {
   .footer__grid {
     display: flex;
@@ -23,35 +25,42 @@
   float: left;
   padding: 0 20px;
 }
+
 @media only screen and (max-width: 500px) {
   .footer__grid__card {
     width: 50%;
   }
 }
 
-.footer__grid__card > div {
+.footer__grid__card>div {
   display: flex;
   flex-direction: row;
 }
-.footer__grid__card > div > div {
+
+.footer__grid__card>div>div {
   margin: 0 40px;
 }
+
 #main {
   font-weight: bold;
 }
+
 #links {
   color: #ccff99;
   /*color: #317f2a;**/
   margin-top: 2px;
 }
+
 #links:hover {
   color: #0a5518;
   cursor: pointer;
 }
+
 #iconPanel {
   display: flex;
   flex-direction: row;
 }
+
 #iconCircle {
   margin: 10px 10px;
   background-color: #ccff99;
@@ -62,12 +71,15 @@
   border-radius: 17px;
   padding: 5px;
 }
+
 #iconCircle:hover {
   background-color: #0a5518;
 }
-#iconCircle > a {
+
+#iconCircle>a {
   color: black;
 }
+
 #button {
   width: 100px;
   height: 30px;
@@ -79,6 +91,7 @@
   border: none;
   margin: 10px 5px;
 }
+
 #button:hover {
   background-color: #0a5518;
   cursor: pointer;
@@ -88,27 +101,33 @@
 @media screen and (max-width: 450px) {
   .footer {
     width: 100vw;
-    height: 220px;
     margin-top: 5px;
+    min-height: 90vh;
   }
+
   .footer__grid__card {
     padding: 0 1px;
   }
-  .footer__grid__card > div > div {
+
+  .footer__grid__card>div div {
     margin: 0 5px;
   }
+
   #main {
-    font-size: 0.8em;
+    font-size: 1em;
   }
+
   #links {
     font-size: 0.6em;
   }
-  /*  #iconPanel {
-    flex-direction: column;
-    align-items: center;
-  }*/
+
+  #iconPanel {
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+
   #iconCircle {
-    margin: 2px 2px;
+    margin: 5px 10px;
     background-color: #ccff99;
     /*background-color: #1e8449;*/
     width: 20px;
@@ -117,9 +136,11 @@
     border-radius: 17px;
     padding: 2px;
   }
+
   #iconIcon {
     font-size: 1em;
   }
+
   #button {
     width: 60px;
     height: 20px;

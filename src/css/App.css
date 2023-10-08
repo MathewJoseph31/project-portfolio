@@ -1,5 +1,12 @@
-
-.AppHeader > h1{
+.AppHeader>h1 {
     margin-left: 30px;
     font-family: 'Times New Roman', Times, serif;
+}
+
+/* MOBILE SCREENS */
+@media screen and (max-width: 450px) {
+    .AppHeader>h1 {
+        margin-left: 0px;
+        font-size: large;
+    }
 }

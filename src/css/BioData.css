@@ -1,8 +1,11 @@
-.BioData{
+.BioData {
+    width: 99vw;
+    height: fit-content;
+    min-height: 90vh;
     text-align: center;
 }
 
-.BioData > iframe{
+.BioData>iframe {
     width: 950px;
-    height: 650px;
+    height: 750px;
 }

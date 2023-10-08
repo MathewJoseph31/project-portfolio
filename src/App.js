@@ -37,7 +37,7 @@ function App() {
           currentCategory={currentCategory}
         />
       </header>
-      <section style={{ height: "60vh" }}>
+      <section>
         {currentCategory.name === "about Me" && <About />}
         {currentCategory.name === "projects" && <Project />}
         {currentCategory.name === "contact" && <ContactForm />}
@@ -45,7 +45,11 @@ function App() {
         {currentCategory.name === "resume" && <BioData />}
       </section>
       <footer>
-        <Bottom />
+        <Bottom
+          categories={categories}
+          setCurrentCategory={setCurrentCategory}
+          currentCategory={currentCategory}
+        />
       </footer>
     </div>
   );

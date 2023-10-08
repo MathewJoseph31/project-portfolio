@@ -1,0 +1,36 @@
+.nav {}
+
+.nav__navlist {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav__navlist__item {
+    margin-left: 10px;
+    list-style: none;
+    cursor: pointer;
+}
+
+.navActive {
+    color: violet;
+}
+
+.nav__navlist__item:first-child {
+    margin-left: 0;
+}
+
+/* MOBILE SCREENS */
+@media screen and (max-width: 450px) {
+    .nav {
+        font-size: large;
+    }
+
+    .nav__navlist {
+        padding-left: 0;
+
+    }
+
+    .nav__navlist__item {
+        font-size: small;
+    }
+}

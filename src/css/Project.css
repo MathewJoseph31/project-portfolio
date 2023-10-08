@@ -1,20 +1,22 @@
-.Project{
+.Project {
+    width: 99vw;
+    height: fit-content;
+    min-height: 90vh;
     margin-left: 40px;
     font-family: 'Times New Roman', Times, serif;
-    height: 60vh;
     overflow-y: scroll;
 }
 
-.Project > section{
+.Project>section {
     width: 80vw;
     font-weight: normal;
 }
 
-.Project  iframe{
+.Project iframe {
     width: 600px;
     height: 400px;
 }
 
-.Project > section > img{
+.Project>section>img {
     width: 600px;
 }

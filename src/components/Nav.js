@@ -1,18 +1,19 @@
 import React from "react";
 import { capitalizeFirstLetter } from "../utils/helpers";
 
+import "../css/Nav.css";
+
 function Nav(props) {
   const { categories = [], setCurrentCategory, currentCategory } = props;
 
   return (
-    <div>
-      {" "}
+    <section className="nav">
       <nav>
-        <ul className="flex-row">
+        <ul className="nav__navlist">
           {categories.map((category) => (
             <li
-              className={`mx-1 ${
-                currentCategory.name === category.name && "navActive"
+              className={`nav__navlist__item ${
+                currentCategory.name === category.name && " navActive"
               }`}
               key={category.name}
             >
@@ -27,7 +28,7 @@ function Nav(props) {
           ))}
         </ul>
       </nav>
-    </div>
+    </section>
   );
 }
 

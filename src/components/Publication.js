@@ -22,7 +22,6 @@ function Publication(props) {
       <p>2016</p>
       <p>
         <a
-          class="XqQF9c"
           href="http://www.google.com/url?q=http%3A%2F%2Fvldb2016.persistent.com%2Fdemonstrations.php&amp;sa=D&amp;sntz=1&amp;usg=AOvVaw35-T9EO7yN51RiFx_WOKwO"
           target="_blank"
         >
@@ -34,7 +33,6 @@ function Publication(props) {
       </p>
       <p>
         <a
-          class="XqQF9c"
           href="http://www.google.com/url?q=http%3A%2F%2Fwww.semantic-web-journal.net%2Fsystem%2Ffiles%2Fswj906.pdf&amp;sa=D&amp;sntz=1&amp;usg=AOvVaw1GGKAu5Mxo2_uKIaO_nOyj"
           target="_blank"
         >

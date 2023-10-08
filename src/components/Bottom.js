@@ -7,18 +7,18 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import "../css/Bottom.css";
 
 function Bottom() {
-  const protocol = "http";
+  const protocol = "https";
   return (
     <div className="footer">
       <div className="footer__grid">
-        <div className="footer__grid__card">
-          <p id="main">mathewjoseph.com</p>
+        <section className="footer__grid__card">
+          <p id="main">Mathew Joseph</p>
           <p id="links">
-            605 W Genesse St, <br /> Syracuse, NY-13204, USA <br />
+            6510 High Meadow Ct, <br /> Long Grove, IL-60047, USA <br />
             ph: +1 3158029788
           </p>
-        </div>
-        <div className="footer__grid__card">
+        </section>
+        <section className="footer__grid__card">
           <div>
             <div>
               <p id="main">Links</p>
@@ -40,14 +40,7 @@ function Bottom() {
               <p
                 id="links"
                 onClick={() =>
-                  window.location.assign(
-                    protocol +
-                      "://" +
-                      window.location.hostname +
-                      ":" +
-                      window.location.port +
-                      "/aboutus"
-                  )
+                  window.location.assign(protocol + "://scuoler.com/aboutus")
                 }
               >
                 About Us
@@ -55,25 +48,18 @@ function Bottom() {
               <p
                 id="links"
                 onClick={() =>
-                  window.location.assign(
-                    protocol +
-                      "://" +
-                      window.location.hostname +
-                      ":" +
-                      window.location.port +
-                      "/contactUs"
-                  )
+                  window.location.assign(protocol + "://scuoler.com/contactUs")
                 }
               >
                 Contact Us
               </p>
             </div>
           </div>
-        </div>
-        <div className="footer__grid__card">
-          <p id="main">Follow us:</p>
-          <div id="iconPanel">
-            <p id="iconCircle">
+        </section>
+        <section className="footer__grid__card">
+          <header id="main">Follow us:</header>
+          <main id="iconPanel">
+            <nav id="iconCircle">
               <a
                 href={"https://www.facebook.com/scuoler/"}
                 target="_blank"
@@ -81,8 +67,8 @@ function Bottom() {
               >
                 <FacebookIcon id="iconIcon" />
               </a>
-            </p>
-            <p id="iconCircle">
+            </nav>
+            <nav id="iconCircle">
               <a
                 href={"https://www.instagram.com/scuoler.elearning/"}
                 target="_blank"
@@ -90,8 +76,8 @@ function Bottom() {
               >
                 <InstagramIcon id="iconIcon" />
               </a>
-            </p>
-            <p id="iconCircle">
+            </nav>
+            <nav id="iconCircle">
               <a
                 href={"https://www.linkedin.com/company/scuoler"}
                 target="_blank"
@@ -99,8 +85,8 @@ function Bottom() {
               >
                 <LinkedInIcon id="iconIcon" />
               </a>
-            </p>
-            <p id="iconCircle">
+            </nav>
+            <nav id="iconCircle">
               <a
                 href={"https://www.twitter.com/"}
                 target="_blank"
@@ -108,13 +94,20 @@ function Bottom() {
               >
                 <TwitterIcon id="iconIcon" />
               </a>
-            </p>
-          </div>
-        </div>
-        <div className="footer__grid__card">
-          <p id="main">Support us:</p>
-          <button id="button">Donate</button>
-        </div>
+            </nav>
+          </main>
+        </section>
+        <section className="footer__grid__card">
+          <header id="main">Support us:</header>
+          <button
+            id="button"
+            onClick={() =>
+              window.location.assign(protocol + "://scuoler.com/donate")
+            }
+          >
+            Donate
+          </button>
+        </section>
       </div>
     </div>
   );

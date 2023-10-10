@@ -24,7 +24,7 @@ function Bottom() {
               <p id="main">Links</p>
               <p
                 id="links"
-                onClick={() =>
+                onClick={(e) =>
                   window.location.assign(
                     protocol +
                       "://" +
